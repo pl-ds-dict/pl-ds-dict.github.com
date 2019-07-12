@@ -9,6 +9,17 @@ This is the source code behind the site: https://tpietruszka.github.io/data_scie
 - gather Polish equivalents of Data Science-related terms **already being used**
 - discuss and determine best practices - what to translate and how
 
+#### TODO
+
+This project is in a very early stage. Pull requests are preferred to criticism.
+
+Other than adding new words and improving old ones, the following issues seem to
+be important:
+
+- improving the layout - better placement of things, aesthetics, etc. Knowledge
+of Hugo might be useful - e.g. maybe the `ananke` theme is not necessary?
+- adding some JS to make the table searchable and sortable (purely client-side)
+
 
 #### Why not just use English terms everywhere?
 
