@@ -1,0 +1,34 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+{{ define "main" }}
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+        {{.Params.english | upper}}
+      </p>
+    </header>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+      <table class="dict-single-entry">
+      <tr><td>English:</td><td>{{ .Params.english }}</td></tr>
+        <tr><td>Abbreviations:</td><td>{{ .Params.abbreviations }}</td></tr>
+        <tr><td>Recommended translation:</td><td>{{ .Params.recommended_translation }}</td></tr>
+        <tr><td>Other translations:</td><td>{{ .Params.other_translations}}</td></tr>
+      </table>
+      <p class="f6 b">
+        Justification, additional information:
+      </p>
+      {{- .Content -}}
+      <div class="mt6">
+      {{/* add a comments widget here */}}
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+      {{- partial "menu-contextual.html" . -}}
+    </aside>
+
+  </article>
+{{ end }}
