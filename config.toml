@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://tpietruszka.github.io/data_science_dictionary_pl/"
 languageCode = "en-us"
 title = "Angielsko-polski słownik Data Science"
 theme = "ananke"
