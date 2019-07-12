@@ -1,5 +1,5 @@
 ---
-english: Unlabelled data
+title: Unlabelled data
 abbreviations:
 recommended_translation: Dane bez etykiety
 other_translations:

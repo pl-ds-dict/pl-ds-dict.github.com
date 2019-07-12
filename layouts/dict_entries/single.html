@@ -7,12 +7,12 @@
 
     <header class="mt4 w-100">
       <p class="f6 b helvetica tracked">
-        {{.Params.english | upper}}
+        {{.Title | upper}}
       </p>
     </header>
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
       <table class="dict-single-entry">
-      <tr><td>English:</td><td>{{ .Params.english }}</td></tr>
+      <tr><td>English:</td><td>{{ .Title }}</td></tr>
         <tr><td>Abbreviations:</td><td>{{ .Params.abbreviations }}</td></tr>
         <tr><td>Recommended translation:</td><td>{{ .Params.recommended_translation }}</td></tr>
         <tr><td>Other translations:</td><td>{{ .Params.other_translations}}</td></tr>
