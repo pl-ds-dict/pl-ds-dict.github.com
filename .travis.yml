@@ -1,14 +1,10 @@
-# based on https://www.martinkaptein.com/hugo-with-travis-ci-on-gh-pages/
-language: go
-
-go:
-  - master # This uses automatically the latest version of go
-
 install:
-  - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
-
+  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.55.4/hugo_0.55.4_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.55.4_Linux-64bit.deb
 script:
-  - hugo # This commands builds your website on travis
+  - hugo
+
+# based on https://www.martinkaptein.com/hugo-with-travis-ci-on-gh-pages/
 
 deploy:
   local_dir: public # Default static site output dir for Hugo
