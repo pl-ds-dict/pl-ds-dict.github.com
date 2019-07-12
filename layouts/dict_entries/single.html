@@ -11,11 +11,23 @@
       </p>
     </header>
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-      <table class="dict-single-entry">
-      <tr><td>English:</td><td>{{ .Title }}</td></tr>
-        <tr><td>Abbreviations:</td><td>{{ .Params.abbreviations }}</td></tr>
-        <tr><td>Recommended translation:</td><td>{{ .Params.recommended_translation }}</td></tr>
-        <tr><td>Other translations:</td><td>{{ .Params.other_translations}}</td></tr>
+      <table class="f6 w-100 mw8 center" cellspacing="0">
+        <tr>
+          <td class="fw6 b--black-20 tl pb3 pr3 f3">English:</td>
+          <td class="pv3 pr3 f3 b--black-20">{{ .Title }}</td>
+        </tr>
+        <tr>
+          <td class="fw6 b--black-20 tl pb3 pr3 f3">Abbreviations:</td>
+          <td class="pv3 pr3 f3 b--black-20">{{ .Params.abbreviations }}</td>
+        </tr>
+        <tr>
+          <td class="fw6 b--black-20 tl pb3 pr3 f3">Recommended translation:</td>
+          <td class="pv3 pr3 f3 b--black-20">{{ .Params.recommended_translation }}</td>
+        </tr>
+        <tr>
+          <td class="fw6 b--black-20 tl pb3 pr3 f3">Other translations:</td>
+          <td class="pv3 pr3 f3 b--black-20">{{ .Params.other_translations}}</td>
+        </tr>
       </table>
       <p class="f6 b">
         Justification, additional information:
