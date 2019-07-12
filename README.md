@@ -32,6 +32,17 @@ with additional information and comments. Comments are attached to
 auto-generated GitHub issues. Issues are created when the first comment is
 added for each page.
 
+#### How to run it locally
+
+After cloning the repository, simply run `hugo server`. The site will be
+available at `http://localhost:1313/data_science_dictionary_pl/`.
+
+To build the static version, simply run `hugo`. It will generate the `public`
+directory.
+
+**Please do not commit the `public` directory to the repo. The online version
+is being built automatically, it is enough to edit the appropriate `.md` file
+and send a pull request**
 
 #### How to contribute
 
@@ -47,10 +58,10 @@ e.g by clicking [here](https://github.com/tpietruszka/data_science_dictionary_pl
 Current template:
 ```
 ---
-title: Some English term
-abbreviations: SET,
-recommended_translation: Najlepsze tłumaczenie
-other_translations: Gorsze tłumaczenie, Najgorzej
+title: "Some English term"
+abbreviations: "SET"
+recommended_translation: "Najlepsze tłumaczenie"
+other_translations: "Gorsze tłumaczenie, Najgorzej"
 ---
 Any additional information, including **markdown**. Maybe a video interview
 with a linguist?
