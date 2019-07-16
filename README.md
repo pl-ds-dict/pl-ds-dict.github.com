@@ -43,7 +43,7 @@ with additional information and comments. Comments are attached to
 auto-generated GitHub issues. Issues are created when the first comment is
 added for each page.
 
-** The default branch of this repo is `source`.** The `master` branch
+**The default branch of this repo is `source`.** The `master` branch
 contains the html files resulting from a build. Such a setup is necessary, as
 GitHub User Pages can only be served from the `master` branch.
 
@@ -68,7 +68,7 @@ Pull Requests modifying existing content or adding something new are very
 welcome! If modifying a file please mention the relevant issue.
 
 If you want to add a word, please create a new file in `content/dict_entries`,
-e.g by clicking [here](https://github.com/pl-ds-dict/pl-ds-dict.github.com/new/source/content/dict_entries).
+e.g. by clicking [here](https://github.com/pl-ds-dict/pl-ds-dict.github.com/new/source/content/dict_entries).
 
 Current template:
 ```
