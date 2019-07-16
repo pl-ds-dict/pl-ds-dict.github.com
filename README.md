@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/tpietruszka/data_science_dictionary_pl.svg?branch=master)](https://travis-ci.org/tpietruszka/data_science_dictionary_pl)
+[![Build Status](https://travis-ci.org/pl-ds-dict/pl-ds-dict.github.com.svg?branch=source)](https://travis-ci.org/pl-ds-dict/pl-ds-dict.github.com)
 
 ## English-Polish Data Science dictionary / Angielsko-polski słownik Data Science
 
-This is the source code behind the site: https://tpietruszka.github.io/data_science_dictionary_pl/
+This is the source code behind the site: https://pl-ds-dict.github.io/
 
 #### Goals of the project
 
@@ -43,10 +43,14 @@ with additional information and comments. Comments are attached to
 auto-generated GitHub issues. Issues are created when the first comment is
 added for each page.
 
+** The default branch of this repo is `source`.** The `master` branch
+contains the html files resulting from a build. Such a setup is necessary, as
+GitHub User Pages can only be served from the `master` branch.
+
 #### How to run it locally
 
 After cloning the repository, simply run `hugo server`. The site will be
-available at `http://localhost:1313/data_science_dictionary_pl/`.
+available at `http://localhost:1313/`.
 
 To build the static version, simply run `hugo`. It will generate the `public`
 directory.
@@ -64,7 +68,7 @@ Pull Requests modifying existing content or adding something new are very
 welcome! If modifying a file please mention the relevant issue.
 
 If you want to add a word, please create a new file in `content/dict_entries`,
-e.g by clicking [here](https://github.com/tpietruszka/data_science_dictionary_pl/new/master/content/dict_entries).
+e.g by clicking [here](https://github.com/pl-ds-dict/pl-ds-dict.github.com/new/source/content/dict_entries).
 
 Current template:
 ```

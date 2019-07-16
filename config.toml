@@ -1,4 +1,4 @@
-baseURL = "https://tpietruszka.github.io/data_science_dictionary_pl/"
+baseURL = "https://pl-ds-dict.github.io/"
 languageCode = "en-us"
 title = "Angielsko-polski słownik Data Science"
 theme = "ananke"
