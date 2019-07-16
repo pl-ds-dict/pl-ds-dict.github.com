@@ -1,4 +1,5 @@
 {{ define "header" }}
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
    {{/* We can override any block in the baseof file be defining it in the template */}}
   {{ partial "page-header.html" . }}
 {{ end }}
@@ -11,16 +12,18 @@
     </p>
   </section>
   <aside class="flex-ns flex-wrap justify-around mt5">
-  <table class="f6 w-100 mw8 center" cellspacing="0">
-    <tr>
+  <table id="dictMainTable" class="f6 w-100 mw8 center" cellspacing="0">
+    <thead>
       <th class="fw6 bb b--black-20 tl pb3 pr3">English</th>
       <th class="fw6 bb b--black-20 tl pb3 pr3">Abbreviations</th>
       <th class="fw6 bb b--black-20 tl pb3 pr3">Recommended translation</th>
       <th class="fw6 bb b--black-20 tl pb3 pr3">Other translations</th>
-    </tr>
-  {{ range sort .Pages ".Title" }}
-    {{ .Render "li"}}
-  {{ end }}
+    </thead>
+    <tbody>
+    {{ range sort .Pages ".Title" }}
+      {{ .Render "li"}}
+    {{ end }}
+    </tbody>
   </table>
   </aside>
 
@@ -36,4 +39,15 @@
       </p>
     </section>
 </article>
+
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" async>
+      $(document).ready(function() {
+      $('#dictMainTable').DataTable( {
+        'paging': false,
+        'info':   false,
+      });
+  } );
+  </script>
 {{ end }}
