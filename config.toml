@@ -10,7 +10,7 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
 [params]
 	colorScheme = "scheme-darkbrown"
 	dateformat = "Jan 2, 2006"
-	sidebarFreeText = "Ten słownik ma na celu zgromadzić już stosowane, polskie tłumaczenia wyrażeń związanych z Data Science, Machine Learning i pokrewnymi dziedzinami. \n\n Drugim celem jest próba ustalenia, w ramach otwartej dyskusji, jakie jest zalecane tłumaczenie, **albo że zaleca się nie tłumaczyć danego wyrażenia**"
+	sidebarFreeText = "Ten słownik ma na celu zgromadzić już stosowane, polskie tłumaczenia wyrażeń związanych z Data Science, Machine Learning i pokrewnymi dziedzinami. \n\n Drugim celem jest próba ustalenia, w ramach otwartej dyskusji, jakie jest zalecane tłumaczenie, **albo że zaleca się nie tłumaczyć danego wyrażenia**."
 	piwikSiteID = ""
 	piwikURL = ""
 
