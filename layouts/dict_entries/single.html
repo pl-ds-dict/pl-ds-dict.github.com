@@ -11,30 +11,30 @@
 
           <table class="table table-striped table-hover">
             <tr>
-              <th>English:</th>
+              <th>{{ .Site.Params.labels.term }}:</th>
               <td>{{ .Title }}</td>
             </tr>
             <tr>
-              <th>Abbreviations:</th>
+              <th>{{ .Site.Params.labels.abbreviation }}:</th>
               <td>{{ .Params.abbreviations }}</td>
             </tr>
             <tr>
-              <th>Recommended translation:</th>
+              <th>{{ .Site.Params.labels.recommended_translation }}:</th>
               <td>{{ .Params.recommended_translation }}</td>
             </tr>
             <tr>
-              <th>Other translations:</th>
+              <th>{{ .Site.Params.labels.other_translations }}:</th>
               <td>{{ .Params.other_translations}}</td>
             </tr>
 						<tr>
 							<td colspan="2">
 								<a style="text-decoration: underline;"
-								href="https://github.com/pl-ds-dict/pl-ds-dict.github.com/edit/source/content/{{ .File.Path }}">Edit this page</a>
+								href="https://github.com/pl-ds-dict/pl-ds-dict.github.com/edit/source/content/{{ .File.Path }}">{{ .Site.Params.labels.edit_this_page }}</a>
 							</td>
           </table>
 					{{ if .Content }}
           <p>
-            Additional information:
+            {{ .Site.Params.labels.additional_information }}:
           </p>
           <div>
           {{- .Content -}}

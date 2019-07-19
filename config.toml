@@ -1,5 +1,5 @@
 baseURL = "https://pl-ds-dict.github.io/"
-languageCode = "en-us"
+languageCode = "pl-pl"
 title = "Angielsko-polski słownik Data Science"
 theme = "strange-case"
 
@@ -13,6 +13,16 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
 	sidebarFreeText = "Ten słownik ma na celu zgromadzić już stosowane, polskie tłumaczenia wyrażeń związanych z Data Science, Machine Learning i pokrewnymi dziedzinami. \n\n Drugim celem jest próba ustalenia, w ramach otwartej dyskusji, jakie jest zalecane tłumaczenie, **albo że zaleca się nie tłumaczyć danego wyrażenia**."
 	piwikSiteID = ""
 	piwikURL = ""
+	[params.labels]
+		term = "Termin"
+		abbreviation = "Skrót"
+		recommended_translation = "Zalecane tłumaczenie"
+		other_translations = "Inne tłumaczenia"
+		search = "Wyszukaj"
+		edit_this_page = "Edytuj tę stronę"
+		additional_information = "Dodatkowe informacje"
+		# dict_instructions = "Start typing to search  \n  Click on an entry for additional information and discussion"
+		dict_instructions = "Zacznij pisać aby wyszukać  \n Kliknij wybrany termin żeby zobaczyć dodatkowe informacje i dyskusję"
 
 [[menu.main]]
 	name = "Edytuj na GitHub"

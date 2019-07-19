@@ -1,9 +1,9 @@
 <table id="dictMainTable" cellspacing="0" class="table table-striped table-hover table-border">
   <thead>
-    <th>English</th>
-    <th>Abbreviations</th>
-    <th>Recommended translation</th>
-    <th>Other translations</th>
+    <th>{{ .Site.Params.labels.term }}</th>
+    <th>{{ .Site.Params.labels.abbreviation }}</th>
+    <th>{{ .Site.Params.labels.recommended_translation }}</th>
+    <th>{{ .Site.Params.labels.other_translations }}</th>
   </thead>
   <tbody>
     {{ range sort .Pages ".Title" }}
@@ -23,6 +23,9 @@
     $('#dictMainTable').DataTable( {
       'paging': false,
       'info':   false,
+      'language': {
+        'search': {{ .Site.Params.labels.search }}+':'
+      }
     });
     $('div.dataTables_filter input').focus()
   } );

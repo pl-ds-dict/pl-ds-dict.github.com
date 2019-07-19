@@ -9,8 +9,7 @@
 			</div>
 			<div class="col-sm-7 col-sm-offset-4 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-3 content">
 				<div id="mainTopDisclaimer">
-					<p class="lead">Start typing to search <br/>
-					Click on an entry for additional information and discussion</p>
+					<p class="lead">{{ .Site.Params.labels.dict_instructions | markdownify }}</p>
 				</div>
 				<div id="mainDictTable">
 				{{ partial "dict_table" . }}
