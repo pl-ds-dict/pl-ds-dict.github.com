@@ -1,0 +1,25 @@
+.sidebar-freetext {
+  font-size: 15px;
+}
+
+#dictMainTable_filter {
+  float: left;
+}
+
+#dictMainTable_wrapper {
+  margin-top: 25px;
+}
+
+
+#mainTopDisclaimer {
+  float:right;
+  margin-top: 25px;
+}
+
+div#entry-single {
+  padding-top: 50px;
+}
+
+div#entry-single table th {
+  font-weight: bold;
+}

@@ -1,53 +1,25 @@
-{{ define "header" }}
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-   {{/* We can override any block in the baseof file be defining it in the template */}}
-  {{ partial "page-header.html" . }}
-{{ end }}
-{{ define "main" }}
-<article class="pa3 pa4-ns nested-copy-line-height nested-img">
-  <section class="cf ph3 ph5-l pv3 pv4-l f4 tl center measure-wide lh-copy mid-gray">
-    <p>
-      Kliknij na wybrany termin żeby zobaczyć dodatkowe informacje i dyskusję.
-      <br/>Kliknij <a href="https://github.com/pl-ds-dict/pl-ds-dict.github.com" target="_blank">tutaj</a> żeby edytować stronę.
-    </p>
-  </section>
-  <aside class="flex-ns flex-wrap justify-around mt5">
-  <table id="dictMainTable" class="f6 w-100 mw8 center" cellspacing="0">
-    <thead>
-      <th class="fw6 bb b--black-20 tl pb3 pr3">English</th>
-      <th class="fw6 bb b--black-20 tl pb3 pr3">Abbreviations</th>
-      <th class="fw6 bb b--black-20 tl pb3 pr3">Recommended translation</th>
-      <th class="fw6 bb b--black-20 tl pb3 pr3">Other translations</th>
-    </thead>
-    <tbody>
-    {{ range sort .Pages ".Title" }}
-      {{ .Render "li"}}
-    {{ end }}
-    </tbody>
-  </table>
-  </aside>
+{{ partial "header.html" . }}
 
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tl center measure-wide lh-copy mid-gray">
-      <p>
-        Ten słownik ma na celu zgromadzić już stosowane, polskie tłumaczenia
-        wyrażeń związanych z Data Science, Machine Learning i pokrewnymi
-        dziedzinami.
-      </p>
-      <p>Drugim celem jest próba ustalenia, w ramach otwartej dyskusji, jakie
-        jest zalecane tłumaczenie, <strong>albo że zaleca się nie tłumaczyć
-        danego wyrażenia</strong>.
-      </p>
-    </section>
-</article>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4 col-md-3 col-lg-3 sidebar">
 
-	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" async>
-      $(document).ready(function() {
-      $('#dictMainTable').DataTable( {
-        'paging': false,
-        'info':   false,
-      });
-  } );
-  </script>
-{{ end }}
+			{{ partial "sidebar-content.html" . }}
+
+			</div>
+			<div class="col-sm-7 col-sm-offset-4 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-3 content">
+				<div id="mainTopDisclaimer">
+					<p class="lead">Start typing to search <br/>
+					Click on an entry for additional information and discussion</p>
+				</div>
+				<div id="mainDictTable">
+				{{ partial "dict_table" . }}
+				</div>
+
+			</div>
+			<div class="col-sm-1 col-md-3 col-md-4">
+			</div>
+		</div>
+	</div>
+
+{{ partial "footer.html" . }}
