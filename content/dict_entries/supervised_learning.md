@@ -1,6 +1,6 @@
 ---
 title: "Supervised learning"
 abbreviations:
-recommended_translation: "?"
-other_translations: "Uczenie z nadzorem, uczenie nadzorowane"
+recommended_translation: "Uczenie nadzorowane"
+other_translations: "Uczenie z nadzorem, uczenie z nauczycielem"
 ---
