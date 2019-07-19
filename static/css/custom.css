@@ -23,3 +23,7 @@ div#entry-single {
 div#entry-single table th {
   font-weight: bold;
 }
+
+.post a {
+  text-decoration: underline;
+}

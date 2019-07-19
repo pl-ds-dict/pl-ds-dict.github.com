@@ -28,3 +28,7 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
 	name = "Edytuj na GitHub"
 	url = "https://github.com/pl-ds-dict/pl-ds-dict.github.com"
 	Pre = "_new"
+
+[[menu.main]]
+	name = "Jak dodać nowy termin"
+	url = "add_term"
