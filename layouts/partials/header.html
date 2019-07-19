@@ -27,9 +27,5 @@
 	{{ block "header-page-extras" . }}
 	{{ end }}
 
-	<!-- RSS -->
-	{{ with .OutputFormats.Get "rss" -}}
-	    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-	{{ end -}}
 </head>
 <body class="{{ .Site.Params.colorScheme }}">

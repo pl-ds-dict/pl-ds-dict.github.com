@@ -2,6 +2,7 @@ baseURL = "https://pl-ds-dict.github.io/"
 languageCode = "pl-pl"
 title = "Angielsko-polski słownik Data Science"
 theme = "strange-case"
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS", "section"]
 
 [frontmatter]
 # update sitemap.xml's lastmod datetime by file change time, instead of git.
@@ -31,4 +32,4 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
 
 [[menu.main]]
 	name = "Jak dodać nowy termin"
-	url = "add_term"
+	url = "/add_term/"
