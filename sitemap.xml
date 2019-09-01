@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/accuracy/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/embeddings/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/encoder/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/add_term/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/labeled_data/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/lstm/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/one-hot_encoding/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/reinforcement_learning/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/stop_words/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/supervised_learning/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/unlabeled_data/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pl-ds-dict.github.io/dict_entries/unsupervised_learning/</loc>
+    <lastmod>2019-09-01T13:42:50+00:00</lastmod>
+  </url>
+  
+</urlset>
